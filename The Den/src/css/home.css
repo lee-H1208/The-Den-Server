@@ -1,0 +1,8 @@
+.loginContainer {
+  width: page-width;
+  height: fit-content;
+}
+
+#loginLogo {
+  width: 8vw;
+}

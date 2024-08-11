@@ -1,0 +1,61 @@
+#logo {
+  max-height: 18vh;
+  display: flex;
+  padding-left: 3vh;
+  padding-top: 2vh;
+  padding-right: 2vh;
+  padding-bottom: 2vh;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 4vh;
+  padding: 0 auto;
+  width: 100%;
+  height: fit-content;
+  border: 1px solid blue;
+}
+
+.tabs {
+  background-color: #b35252;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-decoration: none;
+  height: 6vh;
+  max-width: text-width;
+  margin-right: 4vw;
+  margin-top: 6vh;
+  padding: 0.5vh 2vh;
+  border-radius: 10px;
+
+}
+
+#firstTab {
+  margin-left: 2vw;
+}
+
+.navbar .tabs:hover {
+  background-color: rgb(144, 60, 60);
+}
+.navbar .tabs:active {
+  background-color: rgb(245, 222, 150);
+}
+
+.navDate {
+  margin-top: auto;
+  margin-bottom: 8vh;
+}
+
+.navbar p {
+  font-size: 3vh;
+  display: flex;
+  margin: auto;
+  gap: 1vw;
+  text-align: center;
+}
+
+#navTime {
+  justify-content: center;
+}

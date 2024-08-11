@@ -1,0 +1,118 @@
+.logsignContainer {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 30%;
+  padding-bottom: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: rgb(252, 240, 222);
+  border-radius: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bottomLink {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.logHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.logText {
+  font-size: 3vw;
+  font-weight: 500;
+}
+
+.logUnderline {
+  width: 10%;
+  height: 6px;
+  background: rgb(179, 82, 82);
+  border-radius: 9px;
+}
+
+.logInputs {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.logInput {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 95%;
+  height: 70px;
+  background: rgb(241, 228, 209);
+  border-radius: 10px;
+}
+
+.logInput img {
+  margin: 0px 30px;
+}
+
+.logInput input {
+  height: 50px;
+  width: 70%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.forgotPassword {
+  margin: auto;
+  font-size: 18px;
+}
+
+.forgotPassword span,
+.bottomLink span {
+  color: rgb(144, 60, 60);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12vw;
+  height: 59px;
+  font-size: 20px;
+  background: rgb(179, 82, 82);
+  color: rgb(247, 235, 217);
+  font-weight: 500;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  margin-top: 20px;
+}
+
+.submit:hover {
+  background-color: rgb(144, 60, 60);
+}
+
+.submit:active {
+  background-color: rgb(245, 222, 150);
+}

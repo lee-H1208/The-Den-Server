@@ -1,0 +1,68 @@
+.dailyContainer {
+  display: flex;
+  border: 4px solid red;
+  height: fit-content;
+}
+
+#leftDaily {
+  border: 1px solid blue;
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+#rightDaily {
+  border: 1px solid green;
+  height: 100%;
+  width: 70%;
+}
+
+.moodContainer {
+  margin: auto;
+  border-radius: 10px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 1.5vh;
+  background-color: rgb(179, 82, 82);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  font-size: x-large;
+}
+
+.moodButtonDiv {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.moodButton {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.moodButton:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+#angry {
+  width: 50px;
+}
+
+#happy {
+  width: 50px;
+}
+
+#upset {
+  width: 50px;
+}
