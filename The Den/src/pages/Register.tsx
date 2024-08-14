@@ -5,8 +5,12 @@ import user_icon from "../assets/login/person.png";
 import email_icon from "../assets/login/email.png";
 import password_icon from "../assets/login/password.png";
 import { useState } from "react";
+import axios from "axios";
+import { toast } from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
+  const navigate = useNavigate();
   const [data, setData] = useState({
     name: "",
     email: "",
@@ -22,8 +26,29 @@ function Register() {
     });
   };
 
-  const registerUser = (e: { preventDefault: () => void }) => {
+  const registerUser = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
+    const { name, email, password } = data;
+    try {
+      const { data } = await axios.post("/", {
+        name,
+        email,
+        password,
+      });
+      if (data.error) {
+        toast.error(data.error);
+      } else {
+        setData({
+          name: "",
+          email: "",
+          password: "",
+        });
+        toast.success("Login Successful. Welcome!");
+        navigate("/daily");
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (

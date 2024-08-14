@@ -4,6 +4,7 @@ import Logo from "../images/TheDenLogo.png";
 import email_icon from "../assets/login/email.png";
 import password_icon from "../assets/login/password.png";
 import { useState } from "react";
+import axios from "axios";
 
 const Login = () => {
   const [data, setData] = useState({
@@ -22,6 +23,7 @@ const Login = () => {
 
   const loginUser = (e: { preventDefault: () => void }) => {
     e.preventDefault();
+    axios.get("/");
   };
 
   return (
