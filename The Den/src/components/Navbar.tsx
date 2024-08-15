@@ -36,9 +36,7 @@ const Navbar = () => {
           finances
         </a>
         <div className="navDate">
-          <p>
-            <Clock id="navClock" />
-          </p>
+          <Clock id="navClock" />
           <p id="navTime">{time.toLocaleTimeString()}</p>
         </div>
       </div>

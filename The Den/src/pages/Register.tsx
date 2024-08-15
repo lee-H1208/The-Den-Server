@@ -43,7 +43,7 @@ function Register() {
           email: "",
           password: "",
         });
-        toast.success("Login Successful. Welcome!");
+        toast.success("Sign up successful. Welcome!");
         navigate("/daily");
       }
     } catch (error) {
