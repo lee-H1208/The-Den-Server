@@ -15,7 +15,7 @@ import { Toaster } from "react-hot-toast";
 import "./css/index.css";
 
 axios.defaults.baseURL = "http://localhost:8000";
-axios.defaults.withCredentials = false;
+axios.defaults.withCredentials = true;
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <UserContextProvider>

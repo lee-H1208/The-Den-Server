@@ -53,9 +53,7 @@ function Register() {
 
   return (
     <>
-      <a href="/daily">
-        <img src={Logo} id="loginLogo" alt="Our Logo" />
-      </a>
+      <img src={Logo} id="loginLogo" alt="Our Logo" />
       <div className="logsignContainer">
         <div className="logHeader">
           <div className="logText">Sign Up</div>
