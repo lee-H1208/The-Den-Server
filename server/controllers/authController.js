@@ -90,9 +90,26 @@ const getProfile = (req, res) => {
   }
 };
 
+const resetPassword = async (req, res) => {
+  try {
+    const { email } = req.body;
+
+    // Check if user exists
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res.json({
+        error: "No user found",
+      });
+    }
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 module.exports = {
   test,
   registerUser,
   loginUser,
   getProfile,
+  resetPassword,
 };

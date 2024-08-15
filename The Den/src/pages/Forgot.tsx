@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import axios from "axios";
 import Logo from "../images/TheDenLogo.png";
+import toast from "react-hot-toast";
 import email_icon from "../assets/login/email.png";
 import "../css/logsign.css";
 import { useNavigate } from "react-router-dom";
@@ -20,6 +22,23 @@ const Forgot = () => {
     });
   };
 
+  const resetPassword = async (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    const { email } = data;
+    try {
+      const { data } = await axios.post("/forgot", { email });
+      if (data.error) {
+        toast.error(data.error);
+      } else {
+        setData({ email: "" });
+        toast.success("Login successful. Welcome!");
+        navigate("/reset-password");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <>
       <img src={Logo} id="loginLogo" alt="Our Logo" />
@@ -28,7 +47,7 @@ const Forgot = () => {
           <div className="logText">Forgot Password</div>
           <div className="logUnderline"></div>
         </div>
-        <form>
+        <form onSubmit={resetPassword}>
           <div className="logInputs">
             <div className="logInput">
               <img src={email_icon} alt="" />
