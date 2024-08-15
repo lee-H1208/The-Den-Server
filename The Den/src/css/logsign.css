@@ -27,7 +27,8 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+  color: rgb(144, 60, 60);
 }
 
 .logHeader {
@@ -55,12 +56,14 @@ a:hover {
   margin-top: 5vh;
   display: flex;
   flex-direction: column;
+  width: 80%;
   gap: 25px;
 }
 
 .logInput {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: auto;
   width: 95%;
   height: 70px;
@@ -79,6 +82,12 @@ a:hover {
   border: none;
   outline: none;
   font-size: 20px;
+}
+
+.forgotText {
+  width: 95%;
+  text-align: center;
+  margin: auto;
 }
 
 .forgotPassword {
@@ -102,6 +111,55 @@ a:hover {
   font-size: 20px;
   background: rgb(179, 82, 82);
   color: rgb(247, 235, 217);
+  font-weight: 500;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  margin-top: 20px;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12vw;
+  height: 59px;
+  font-size: 20px;
+  background: rgb(252, 240, 222);
+  color: rgb(179, 82, 82);
+  font-weight: 500;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  margin-top: 20px;
+}
+
+.back:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12vw;
+  height: 59px;
+  font-size: 20px;
+  background: rgb(241, 228, 209);
+  color: grey;
+  font-weight: 500;
+  border-radius: 50px;
+  cursor: pointer;
+  border: none;
+  margin-top: 20px;
+}
+
+.back:active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12vw;
+  height: 59px;
+  font-size: 20px;
+  text-decoration: underline;
+  background: rgb(241, 228, 209);
+  color: grey;
   font-weight: 500;
   border-radius: 50px;
   cursor: pointer;

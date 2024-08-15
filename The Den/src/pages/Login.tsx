@@ -73,7 +73,10 @@ const Login = () => {
               />
             </div>
             <div className="forgotPassword">
-              Lost Password? <span>Click Here!</span>
+              Lost Password?{" "}
+              <a href="/forgot">
+                <span>Click Here!</span>
+              </a>
             </div>
           </div>
           <button type="submit" className="submit">

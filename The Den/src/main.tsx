@@ -9,6 +9,7 @@ import Study from "./pages/Study";
 import Journal from "./pages/Journal";
 import Finances from "./pages/Finances";
 import Login from "./pages/Login";
+import Forgot from "./pages/Forgot";
 import { UserContextProvider } from "../context/userContext";
 import { Toaster } from "react-hot-toast";
 
@@ -29,6 +30,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         <Route path="/study" element={<Study />} />
         <Route path="/journal" element={<Journal />} />
         <Route path="/finances" element={<Finances />} />
+        <Route path="/forgot" element={<Forgot />} />
       </Routes>
     </BrowserRouter>
   </UserContextProvider>
